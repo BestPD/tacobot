@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
 
   .setDescription("Useful Links (Mineplex Staff Only)")
   .setColor("#ed960b")
-  .addField("Toki's SR Form", "https://bit.ly/tacosr")
+  .addField("Toki's SR Form", "test")
   .addField("Mineplex Staff Policy", "https://goo.gl/FhL2xa")
   .addField("Inappropriate Name Submission Form", "https://goo.gl/SYhUdy")
   .addField("Punishment Guidelines (Staff)", "https://goo.gl/q7TBVu")
