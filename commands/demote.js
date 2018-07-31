@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
-  if(!message.member.hasPermission("MANAGE_MEMBERS")) return message.reply("Sorry, you do not have permission!");
+  if(!message.member.roles.find('name', 'Mentor'))  return message.reply("Sorry, you don't have permission to!")
   let rMember = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
   if(!rMember) return message.reply("You didn't enter anyone's name.");
   let role = args.join(" ").slice(22);
