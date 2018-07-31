@@ -5,7 +5,7 @@ module.exports.run = async (bot, message, args) => {
   let rMember = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
   if(!rMember) return message.reply("You didn't enter anyone's name.");
   let role = args.join(" ").slice(22);
-  if(!role) return message.reply("Specify the role you nubbo!");
+  if(!role) return message.reply("Specify the role you nub!");
   let gRole = message.guild.roles.find(`name`, role);
   if(!gRole) return message.reply("I couldn't find that role.");
 
