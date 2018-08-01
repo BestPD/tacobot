@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
-  if (message.channel.id != 'staff-chat') return message.channel.send('This is the incorrect channel to put this command in!')
+  if (message.channel.id != '474007738490290176') return message.channel.send('This is the incorrect channel to put this command in!')
   let serverembed = new Discord.RichEmbed()
 
   .setDescription("Useful Links (Mineplex Staff Only)")
